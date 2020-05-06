@@ -1,38 +1,237 @@
-.App {
-  text-align: center;
+@media (min-width: 576px) {
+    
+     .main
+    {
+        font-size: 30px;
+    }   
+    .footer
+    {
+        font-size: 14px;
+    }
+    
+    .contact
+    {
+        font-size: 15px !important;
+    }
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media (min-width: 768px) {
+    
+     .main
+    {
+        font-size: 35px;
+    }   
+    .footer
+    {
+        font-size: 16px;
+    } 
+    
+    .contact
+    {
+        font-size: 18px !important;
+    }
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media (min-width: 992px) {
+    
+     .main
+    {
+        font-size: 40px;
+    }   
+    .footer
+    {
+        font-size: 18px;
+    } 
+    
+    .contact
+    {
+        font-size: 18px !important;
+
+    }
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (min-width: 1200px) {
+    
+     .main
+    {
+        font-size: 45px;
+    }   
+    .footer
+    {
+        font-size: 20px ;
+    }  
+    
+    .contact
+    {
+        font-size: 20px!important;
+
+    }
+    
 }
 
-.App-link {
-  color: #61dafb;
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    min-width: 576px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;   
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+body {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+#root
+{
+    height: 100%;
+}
+
+
+
+.card
+{
+    position: relative;
+    
+    
+}
+
+.card-img
+{
+    
+     width: 100%;
+     height: auto;
+    
+}
+
+.card-text
+{
+ 
+    font-size: 1em;
+    font-family: Helvetica;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+
+}
+
+.card h1
+{
+    color: #051622;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.card p
+{
+    color: #051622;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer
+{
+    margin-top: -10px;
+    height: 50px;
+    position: relative;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer div i
+{
+    
+    height: 80%;
+    width: 30px;
+    margin:0px auto; 
+    color: white;
+    justify-content: center;
+}
+
+.copyright
+{
+
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: aliceblue;
+    
+}
+
+.contact
+{
+    background-color: bisque;
+    min-height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.contact-title
+{
+    text-align: center;
+    
+}
+
+.contact-card
+{
+    margin-top: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: white;
+    width: 800px;
+}
+
+.contact-form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form form
+{
+    margin-top: 50px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 50em;
+    background-color: white;
+    
+}
+
+.form-control
+{
+    width:600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    margin-bottom:16px;
+    opacity: 0.8;
 }
